@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comic Neue', cursive;
+}
+
+h2{
+    text-align: center;
+    font-weight: bolder;
+    margin: 4% 0;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    width: 96%;
+    margin: 2% 2%;
+    column-gap: 2%;
+}
+
+.col{
+    position: relative;
+    text-align: left;
+    background-color: rgb(163, 161, 161);
+    border: 2px solid black;
+    
+}
+
+.heading {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1% 6%;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    font-weight: bold;
+}
+
+.col-text{
+    margin: 40px 10px 10px 10px;
+    font-weight: bold
+}
+
+.color1{
+    background-color: rgb(235, 152, 166);
+}
+
+.color2{
+    background-color: rgb(216, 98, 98);
+    color: white;
+}
+
+.color3{
+    background-color: rgb(250, 250, 158);
+}
+
+@media (max-width: 992px){
+    .row{
+        flex-wrap: wrap;
+    }
+    .col{
+        width: 49%;
+    }
+
+    .col:last-child{
+        margin-top: 2%;
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px){
+    .row{
+        width: 85%;
+        margin-left: 7.5%;
+    }
+    .col{
+        width: 100%;
+        margin-top: 2%;
+    }
+}

@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&display=swap');
+
+*{
+    font-family: 'Comic Neue', cursive;
+}
+
+.card{
+    background-color: rgb(201, 198, 198);
+}
